@@ -110,5 +110,6 @@ jobs:
         git init
         git branch -M main-${{ env.DCN }}
         git add .
-        git commit -s -m "${{ env.DCN }}: proprietary: initial vendor tree"
+        git commit -s -m "${{ env.DCN }}: proprietary: initial vendor tree
+        Proprietary were extracted from ${{ env.FDR }}/tree/${{ env.FDB }}"
         gh repo create ${{ env.TR }} --public --description="Vendor tree for ${{ env.DCN }}." --source=. --remote=origin --push
