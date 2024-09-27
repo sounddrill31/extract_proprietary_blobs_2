@@ -90,9 +90,9 @@ jobs:
     - name: Clone LineageOS Tools and Utils
       run: |
         cd workspace
-        git clone --depth=1 https://github.com/LineageOS/android_tools_extract-utils -b lineage-20.0 ./android/tools/extract-utils
+        git clone --depth=1 https://github.com/LineageOS/android_tools_extract-utils -b lineage-21.0 ./android/tools/extract-utils
         echo "Done cloning extract-utils."
-        git clone --depth=1  https://github.com/LineageOS/android_prebuilts_extract-tools -b lineage-20.0 ./android/prebuilts/extract-tools
+        git clone --depth=1  https://github.com/LineageOS/android_prebuilts_extract-tools -b lineage-21.0 ./android/prebuilts/extract-tools
         echo "Done cloning extract-tools."
 
     - name: Extracting Files from Dump
